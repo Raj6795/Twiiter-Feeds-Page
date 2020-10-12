@@ -1,0 +1,28 @@
+<div class="card-container">
+  <div class="card" *ngFor="let tweet of tweets">
+    <div class="card-left">
+      <img
+        class="user-img"
+        src="{{ tweet.user.profile_image_url_https }}"
+        alt=""
+      />
+    </div>
+    <div class="card-right">
+      <p>
+        <strong> {{ tweet.user.name }} </strong>
+        <span> @{{ tweet.user.screen_name }} </span>
+      </p>
+      <p class="tweet-text">
+        {{ tweet.text }}
+      </p>
+      <div class="like">
+        <button
+          (click)="tweet.favorite_count = tweet.favorite_count + 1"
+          class="like-btn"
+        >
+          <i class="far fa-heart"></i></button
+        ><span #like class="like-count">{{ tweet.favorite_count }}</span>
+      </div>
+    </div>
+  </div>
+</div>

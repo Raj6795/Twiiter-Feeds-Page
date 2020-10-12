@@ -1,0 +1,57 @@
+.card-container {
+  max-width: 600px;
+  margin: auto;
+  height: 92vh;
+  border: 1px solid rgb(207, 207, 207);
+  overflow: auto;
+}
+
+.card {
+  min-height: 150px;
+  display: flex;
+  padding: 20px 15px;
+  padding-bottom: 0px;
+  border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.card-left {
+  width: 10%;
+}
+
+.card-right {
+  width: 90%;
+  position: relative;
+}
+
+.user-img {
+  border-radius: 50%;
+}
+
+.tweet-text {
+  margin-bottom: 35px;
+}
+
+.like {
+  width: 100%;
+  position: absolute;
+  bottom: 5px;
+}
+
+.like-btn {
+  background-color: white;
+  border: 0;
+  outline: 0;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0px 5px;
+}
+
+.like-btn:hover {
+  background-color: rgb(255, 214, 214);
+  border-radius: 50%;
+}
+
+.like-count {
+  font-size: 20px;
+  padding-left: 10px;
+}
